@@ -1,0 +1,46 @@
+$content-bg: #F7F7F7;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family:'Roboto',  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $content-bg;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.max-container {
+  max-width: 1670px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.flex-1 {
+  flex: 1;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.mb--48 {
+  margin-bottom: 48px;
+}
+.mb--60 {
+  margin-bottom: 60px;
+}

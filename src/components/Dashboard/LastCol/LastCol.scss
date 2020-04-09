@@ -1,0 +1,11 @@
+.LastCol {
+    flex: 1;
+
+    &-Cont {
+        max-width: 200px;
+        width: 100%;
+        >img {
+            width: 100%;
+        }
+    }
+}

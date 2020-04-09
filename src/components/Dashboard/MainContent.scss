@@ -1,15 +1,28 @@
 $content-bg: #F7F7F7;
 $textColor: #292929;
 
-.main-content {
+.MainContent {
   padding-top: 114px;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
   background-color: $content-bg;
+
+  &-Cont {
+    // width: 100%;
+    display: flex;
+
+    &-Test {
+      max-width: 10000px;
+      // width: 100%;
+      // height: 100vh;
+      border: 1px solid red;
+    }
+  }
+
   .main-col {
     box-shadow: 0 0 20px #00000026;
     background-color: #fff;
-    max-width: 812px;
-    width: 100%;
+    // max-width: 812px;
+    // width: 100%;
     margin: 0 16px;
     .main-col--header {
       padding: 36px 72px 8px;
@@ -35,28 +48,8 @@ $textColor: #292929;
     }
     .form {
       padding: 36px 72px 0;
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        margin-right: 64px;
-        label {
-          text-align: left;
-          font: 500 16px/21px Roboto;
-          color: $textColor;
-          margin-bottom: 8px;
-        }
-        input {
-          width: 212px;
-          height: 40px;
-          border: 1px solid $textColor;
-          border-radius: 3px;
-          padding-left: 12px;
-          padding-right: 12px;
-          margin-bottom: 24px;
-        }
-      }
       button {
-        width: 138px;
+        // width: 138px;
         height: 40px;
         background: #B5DCD5 0 0 no-repeat padding-box;
         border-radius: 3px;

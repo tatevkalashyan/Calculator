@@ -1,0 +1,22 @@
+$textColor: #292929;
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+    label {
+      text-align: left;
+      font: 500 16px/21px Roboto;
+      color: $textColor;
+      margin-bottom: 8px;
+    }
+    input {
+      width: 212px;
+      height: 40px;
+      border: 1px solid $textColor;
+      border-radius: 3px;
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-bottom: 24px;
+    }
+  }

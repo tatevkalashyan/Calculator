@@ -1,8 +1,7 @@
 import React from 'react';
+import './Header.scss';
 
-import './header.scss';
-
-function Header() {
+const Header = () => {
     return (
         <header className="header">
         </header>

@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from "./components/header/header";
-import MainContent from "./components/main-content/content";
+import Header from "./components/Header";
+import MainContent from "./components/Dashboard";
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Header/>
-      <MainContent/>
+      <Header />
+      <MainContent />
     </div>
   );
 }

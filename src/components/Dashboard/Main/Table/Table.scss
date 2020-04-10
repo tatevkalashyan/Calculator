@@ -1,0 +1,24 @@
+.Table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+
+    &-Title {
+        padding: 13px 0px;
+        background: #0d8a74 0% 0% no-repeat padding-box;
+        // opacity: 0.3;
+
+        &-1 {
+            display: flex;
+            justify-content: space-between;
+
+            > p {
+                text-align: left;
+                font: Medium 16px/21px Roboto;
+                letter-spacing: 0px;
+                color: #191919 !important;
+                opacity: 1;
+            }
+        }
+    }
+}

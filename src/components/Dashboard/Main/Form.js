@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormGroup } from '../../Form'
+import { FormGroup, Input } from '../../Form'
 
 const Form = () => {
     const [principal, setPrincipal] = useState('')
@@ -59,7 +59,10 @@ const Form = () => {
                         onChange={e => setPerYear1(e.target.value)} />
                 </div>
             </div>
-            <button>CALCULATE</button>
+            <Input 
+            type='submit' 
+            value='CALCULATE'
+            className='submit' />
         </form>
     );
 }

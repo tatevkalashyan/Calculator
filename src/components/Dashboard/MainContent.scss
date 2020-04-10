@@ -1,4 +1,4 @@
-$content-bg: #F7F7F7;
+$content-bg: #f7f7f7;
 $textColor: #292929;
 
 .MainContent {
@@ -48,10 +48,10 @@ $textColor: #292929;
     }
     .form {
       padding: 36px 72px 0;
-      button {
+      .submit {
         // width: 138px;
-        height: 40px;
-        background: #B5DCD5 0 0 no-repeat padding-box;
+        padding: 9px 22px;
+        background: #b5dcd5 0 0 no-repeat padding-box;
         border-radius: 3px;
         text-transform: uppercase;
         font: 500 16px/21px Roboto;

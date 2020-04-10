@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2b424a0.chunk.css",
+    "main.js": "/static/js/main.04a2b1db.chunk.js",
+    "main.js.map": "/static/js/main.04a2b1db.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.aa05e03d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.aa05e03d.js.map",
+    "static/js/2.e412ab88.chunk.js": "/static/js/2.e412ab88.chunk.js",
+    "static/js/2.e412ab88.chunk.js.map": "/static/js/2.e412ab88.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4d508b539a84e12f5ee6ec9a8498cd1d.js": "/precache-manifest.4d508b539a84e12f5ee6ec9a8498cd1d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d2b424a0.chunk.css.map": "/static/css/main.d2b424a0.chunk.css.map",
+    "static/js/2.e412ab88.chunk.js.LICENSE.txt": "/static/js/2.e412ab88.chunk.js.LICENSE.txt",
+    "static/media/MainContent.scss": "/static/media/col-header-bg.dc9b3ef9.png",
+    "static/media/copy.svg": "/static/media/copy.4ec46085.svg",
+    "static/media/fb.svg": "/static/media/fb.4cb4846b.svg",
+    "static/media/mail.svg": "/static/media/mail.410c8263.svg",
+    "static/media/salling.png": "/static/media/salling.3365d0ca.png",
+    "static/media/salling1.png": "/static/media/salling1.1b44ce48.png",
+    "static/media/stream.png": "/static/media/stream.73924a6e.png",
+    "static/media/streamDown.png": "/static/media/streamDown.bfb91866.png",
+    "static/media/twitter.svg": "/static/media/twitter.4a20c12c.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.8eb3f641.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa05e03d.js",
+    "static/js/2.e412ab88.chunk.js",
+    "static/css/main.d2b424a0.chunk.css",
+    "static/js/main.04a2b1db.chunk.js"
+  ]
+}

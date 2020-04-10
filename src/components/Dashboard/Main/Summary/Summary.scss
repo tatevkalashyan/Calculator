@@ -1,0 +1,47 @@
+.Summery {
+    // width: 100%;
+    display: flex;
+    margin-top: 22px;
+    flex-direction: column;
+    background: #ebebeb 0% 0% no-repeat padding-box;
+    // opacity: 0.3;
+    > h1 {
+        text-align: left;
+        font: Bold 20px/26px Roboto;
+        letter-spacing: 0px;
+        color: #292929;
+        opacity: 1;
+    }
+
+    &-Results {
+        display: flex;
+        padding-bottom: 22px;
+
+        &-1 {
+            flex: 1;
+            display: flex;
+            > div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 4px;
+                > p {
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #191919;
+                    opacity: 1;
+                }
+
+                &:first-child {
+                    margin-left: 0px;
+                    > p {
+                        text-align: left;
+                        font: Medium 16px/21px Roboto;
+                        letter-spacing: 0px;
+                        color: #191919;
+                    }
+                }
+            }
+        }
+    }
+}

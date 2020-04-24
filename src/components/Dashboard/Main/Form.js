@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { FormGroup, Input } from '../../Form'
+import { connect } from 'react-redux'
+import { postCalc } from '../../../Action/Action';
 
-const Form = () => {
+let _ = require('lodash')
+
+const Form = props => {
     const [principal, setPrincipal] = useState('')
     const [rate, setRate] = useState('')
     const [balloon, setBalloon] = useState('')
@@ -9,8 +13,23 @@ const Form = () => {
     const [regPayments, setRegPayments] = useState('')
     const [perYear1, setPerYear1] = useState('')
 
+    const handleSubmit = e => {
+        e.preventDefault()
+        props.setIsClicked(true)
+        const sendObj = {
+            principal_amount: principal,
+            annaul_interest_rate: rate,
+            balloon_payment: balloon,
+            number_of_regular_payments: regPayments,
+            payment_amount: perYear,
+            payments_per_year: perYear1
+        }
+
+        props.postCalc('https://amorth-calc.herokuapp.com/', sendObj)
+    }
+
     return (
-        <form className="form">
+        <form onSubmit={handleSubmit} className="form">
             <div className="d-flex justify-content-between">
                 <div>
                     <FormGroup
@@ -19,21 +38,24 @@ const Form = () => {
                         placeholder='00.00'
                         id='Principal'
                         value={principal}
-                        onChange={e => setPrincipal(e.target.value)} />
+                        onChange={e => setPrincipal(e.target.value)}
+                        required={true} />
                     <FormGroup
                         label='Annual Interest Rate'
                         type='number'
                         placeholder='00.00'
                         id='annual-rate'
                         value={rate}
-                        onChange={e => setRate(e.target.value)} />
+                        onChange={e => setRate(e.target.value)}
+                        required={true} />
                     <FormGroup
                         label='Balloon Payment'
                         type='number'
                         placeholder='00.00'
                         id='ball-pay'
                         value={balloon}
-                        onChange={e => setBalloon(e.target.value)} />
+                        onChange={e => setBalloon(e.target.value)}
+                        required={true} />
                 </div>
                 <div>
                     <FormGroup
@@ -42,29 +64,38 @@ const Form = () => {
                         placeholder='00.00'
                         id='year-pay0'
                         value={perYear}
-                        onChange={e => setPerYear(e.target.value)} />
+                        onChange={e => setPerYear(e.target.value)}
+                        required={true} />
                     <FormGroup
                         label='Number of Regular Payments'
                         type='number'
                         placeholder='00.00'
                         id='reg-pay'
                         value={regPayments}
-                        onChange={e => setRegPayments(e.target.value)} />
+                        onChange={e => setRegPayments(e.target.value)}
+                        required={true} />
                     <FormGroup
                         label='Payments per Year'
                         type='number'
                         placeholder='00.00'
                         id='year-pay'
                         value={perYear1}
-                        onChange={e => setPerYear1(e.target.value)} />
+                        onChange={e => setPerYear1(e.target.value)}
+                        required={true} />
                 </div>
             </div>
-            <Input 
-            type='submit' 
-            value='CALCULATE'
-            className='submit' />
+            <Input
+                type='submit'
+                value='CALCULATE'
+                className='submit' />
         </form>
     );
 }
 
-export default Form;
+const mapDispatchToProps = dispatch => {
+    return {
+        postCalc: (url, body) => dispatch(postCalc(url, body)),
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Form)

@@ -1,27 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab734262fd86ddc2e2f1aa5151f81894",
+    "revision": "67ec2229f97a3b1598f312a7264de877",
     "url": "/projects/react/calculator/build/index.html"
   },
   {
-    "revision": "866a7e65482343c80342",
-    "url": "/projects/react/calculator/build/static/css/main.94e0face.chunk.css"
+    "revision": "fb519701b1030f9ddf9f",
+    "url": "/projects/react/calculator/build/static/css/2.ea362c42.chunk.css"
   },
   {
-    "revision": "a4a378d40c57991d1354",
-    "url": "/projects/react/calculator/build/static/js/2.e412ab88.chunk.js"
+    "revision": "c6c5542f4ac2385ebbbc",
+    "url": "/projects/react/calculator/build/static/css/main.fadc4f37.chunk.css"
   },
   {
-    "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/projects/react/calculator/build/static/js/2.e412ab88.chunk.js.LICENSE.txt"
+    "revision": "fb519701b1030f9ddf9f",
+    "url": "/projects/react/calculator/build/static/js/2.8b90d5cf.chunk.js"
   },
   {
-    "revision": "866a7e65482343c80342",
-    "url": "/projects/react/calculator/build/static/js/main.26ceb552.chunk.js"
+    "revision": "cf0e8ab85134e2d0f167",
+    "url": "/projects/react/calculator/build/static/js/3.4dd0c70b.chunk.js"
   },
   {
-    "revision": "436f789ada1deed3617d",
-    "url": "/projects/react/calculator/build/static/js/runtime-main.9797bb4f.js"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/projects/react/calculator/build/static/js/3.4dd0c70b.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "8d50679da4c01e20a0eb",
+    "url": "/projects/react/calculator/build/static/js/4.f8287400.chunk.js"
+  },
+  {
+    "revision": "3ffff7e14083e5642d93fab6fbcb8084",
+    "url": "/projects/react/calculator/build/static/js/4.f8287400.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "c6c5542f4ac2385ebbbc",
+    "url": "/projects/react/calculator/build/static/js/main.bdab3229.chunk.js"
+  },
+  {
+    "revision": "6b54b9a67b07cadb33bd",
+    "url": "/projects/react/calculator/build/static/js/runtime-main.26eafc9a.js"
   },
   {
     "revision": "dc9b3ef998729dfdbcfa69049b8fb102",

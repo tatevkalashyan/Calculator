@@ -14,6 +14,7 @@ const FormGroup = props => {
                 id={props.id}
                 value={props.value}
                 onChange={e => props.onChange(e)}
+                required={props.required}
             />
             {/* <input
                 className={classNames('FormGroup-Input', props.classNameInp)}

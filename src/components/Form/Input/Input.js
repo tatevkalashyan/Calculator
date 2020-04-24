@@ -11,7 +11,8 @@ const Input = props => {
             placeholder={props.placeholder}
             id={props.id}
             value={props.value}
-            onChange={e => props.onChange(e)} />
+            onChange={e => props.onChange(e)}
+            required={props.required} />
     )
 }
 

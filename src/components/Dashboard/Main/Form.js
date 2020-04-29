@@ -3,8 +3,6 @@ import { FormGroup, Input } from '../../Form'
 import { connect } from 'react-redux'
 import { postCalc } from '../../../Action/Action';
 
-let _ = require('lodash')
-
 const Form = props => {
     const [principal, setPrincipal] = useState('')
     const [rate, setRate] = useState('')

@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/projects/react/calculator/build/static/css/main.fadc4f37.chunk.css",
-    "main.js": "/projects/react/calculator/build/static/js/main.c45c3b73.chunk.js",
-    "main.js.map": "/projects/react/calculator/build/static/js/main.c45c3b73.chunk.js.map",
-    "runtime-main.js": "/projects/react/calculator/build/static/js/runtime-main.1dd8ea54.js",
-    "runtime-main.js.map": "/projects/react/calculator/build/static/js/runtime-main.1dd8ea54.js.map",
-    "static/css/2.8b3b8fcb.chunk.css": "/projects/react/calculator/build/static/css/2.8b3b8fcb.chunk.css",
-    "static/js/2.b6626c19.chunk.js": "/projects/react/calculator/build/static/js/2.b6626c19.chunk.js",
-    "static/js/2.b6626c19.chunk.js.map": "/projects/react/calculator/build/static/js/2.b6626c19.chunk.js.map",
-    "static/js/3.4dd0c70b.chunk.js": "/projects/react/calculator/build/static/js/3.4dd0c70b.chunk.js",
-    "static/js/3.4dd0c70b.chunk.js.map": "/projects/react/calculator/build/static/js/3.4dd0c70b.chunk.js.map",
-    "static/js/4.f8287400.chunk.js": "/projects/react/calculator/build/static/js/4.f8287400.chunk.js",
-    "static/js/4.f8287400.chunk.js.map": "/projects/react/calculator/build/static/js/4.f8287400.chunk.js.map",
+    "main.js": "/projects/react/calculator/build/static/js/main.b78eda01.chunk.js",
+    "main.js.map": "/projects/react/calculator/build/static/js/main.b78eda01.chunk.js.map",
+    "runtime-main.js": "/projects/react/calculator/build/static/js/runtime-main.927160d4.js",
+    "runtime-main.js.map": "/projects/react/calculator/build/static/js/runtime-main.927160d4.js.map",
+    "static/css/2.69afc720.chunk.css": "/projects/react/calculator/build/static/css/2.69afc720.chunk.css",
+    "static/js/2.3155d220.chunk.js": "/projects/react/calculator/build/static/js/2.3155d220.chunk.js",
+    "static/js/2.3155d220.chunk.js.map": "/projects/react/calculator/build/static/js/2.3155d220.chunk.js.map",
+    "static/js/3.65f17535.chunk.js": "/projects/react/calculator/build/static/js/3.65f17535.chunk.js",
+    "static/js/3.65f17535.chunk.js.map": "/projects/react/calculator/build/static/js/3.65f17535.chunk.js.map",
+    "static/js/4.fb416636.chunk.js": "/projects/react/calculator/build/static/js/4.fb416636.chunk.js",
+    "static/js/4.fb416636.chunk.js.map": "/projects/react/calculator/build/static/js/4.fb416636.chunk.js.map",
     "index.html": "/projects/react/calculator/build/index.html",
-    "precache-manifest.cb72968c04847f31ca5d6b55ee581227.js": "/projects/react/calculator/build/precache-manifest.cb72968c04847f31ca5d6b55ee581227.js",
+    "precache-manifest.3aaab21f88000095b2ddef2a59793385.js": "/projects/react/calculator/build/precache-manifest.3aaab21f88000095b2ddef2a59793385.js",
     "service-worker.js": "/projects/react/calculator/build/service-worker.js",
-    "static/css/2.8b3b8fcb.chunk.css.map": "/projects/react/calculator/build/static/css/2.8b3b8fcb.chunk.css.map",
+    "static/css/2.69afc720.chunk.css.map": "/projects/react/calculator/build/static/css/2.69afc720.chunk.css.map",
     "static/css/main.fadc4f37.chunk.css.map": "/projects/react/calculator/build/static/css/main.fadc4f37.chunk.css.map",
-    "static/js/3.4dd0c70b.chunk.js.LICENSE.txt": "/projects/react/calculator/build/static/js/3.4dd0c70b.chunk.js.LICENSE.txt",
-    "static/js/4.f8287400.chunk.js.LICENSE.txt": "/projects/react/calculator/build/static/js/4.f8287400.chunk.js.LICENSE.txt",
+    "static/js/3.65f17535.chunk.js.LICENSE.txt": "/projects/react/calculator/build/static/js/3.65f17535.chunk.js.LICENSE.txt",
+    "static/js/4.fb416636.chunk.js.LICENSE.txt": "/projects/react/calculator/build/static/js/4.fb416636.chunk.js.LICENSE.txt",
     "static/media/MainContent.scss": "/projects/react/calculator/build/static/media/col-header-bg.dc9b3ef9.png",
     "static/media/copy.svg": "/projects/react/calculator/build/static/media/copy.4ec46085.svg",
     "static/media/fb.svg": "/projects/react/calculator/build/static/media/fb.4cb4846b.svg",
@@ -31,9 +31,9 @@
     "static/media/whatsapp.svg": "/projects/react/calculator/build/static/media/whatsapp.8eb3f641.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1dd8ea54.js",
-    "static/js/3.4dd0c70b.chunk.js",
+    "static/js/runtime-main.927160d4.js",
+    "static/js/3.65f17535.chunk.js",
     "static/css/main.fadc4f37.chunk.css",
-    "static/js/main.c45c3b73.chunk.js"
+    "static/js/main.b78eda01.chunk.js"
   ]
 }

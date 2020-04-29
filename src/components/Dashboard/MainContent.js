@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FirstCol from "./FirstCol";
 import Main from "./Main";
+import { connect } from 'react-redux'
 import LastCol from "./LastCol";
-
+import { getVideos } from '../../Action/Action';
 import './MainContent.scss';
 
-const MainContent = () => {
-    // d-flex justify-content-between wrap
+const MainContent = props => {
+
+    useEffect(() => {
+        props.get('https://gridfs-ando.herokuapp.com/videos')
+    }, [])
+
     return (
         <main className="MainContent max-container">
             <div className="MainContent-Cont">
@@ -18,4 +23,10 @@ const MainContent = () => {
     );
 }
 
-export default MainContent;
+const mapDispatchToProps = dispatch => {
+    return {
+        get: url => dispatch(getVideos(url)),
+    }
+}
+
+export default connect(null, mapDispatchToProps)(MainContent)

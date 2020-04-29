@@ -6,15 +6,15 @@ let _ = require('lodash')
 
 const Summary = props => {
 
-    const [annaulPayment, setAnnaulPayment] = useState(0)///
-    const [annaulIntRate, setAnnaulIntRate] = useState(0)///
-    const [intOnlyPayment, setIntOnlyPayment] = useState(0)///
-    const [totIntPaid, setTotIntPaid] = useState(0) ////
-    const [totalRepaid, setTotalRepaid] = useState(0) ////
-    const [montlyPayment, setMontlyPayment] = useState(0)///
+    const [annaulPayment, setAnnaulPayment] = useState(0)
+    const [annaulIntRate, setAnnaulIntRate] = useState(0)
+    const [intOnlyPayment, setIntOnlyPayment] = useState(0)
+    const [totIntPaid, setTotIntPaid] = useState(0)
+    const [totalRepaid, setTotalRepaid] = useState(0)
+    const [montlyPayment, setMontlyPayment] = useState(0)
     const [perIntRate, setPerIntRate] = useState(0)
-    const [borrowed, setBorrowed] = useState(0)  ///
-    const [regAmount, setRegAmount] = useState(0)///
+    const [borrowed, setBorrowed] = useState(0)
+    const [regAmount, setRegAmount] = useState(0)
 
     useEffect(() => {
         if (!_.isEmpty(props.calc)) {

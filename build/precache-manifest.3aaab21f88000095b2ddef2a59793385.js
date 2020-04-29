@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "abce54fca5e4add3c7029eec9acb49f4",
+    "revision": "2d9a445172c55ec53ea92d51d7bbd921",
     "url": "/projects/react/calculator/build/index.html"
   },
   {
-    "revision": "68482e04427b26734179",
-    "url": "/projects/react/calculator/build/static/css/2.8b3b8fcb.chunk.css"
+    "revision": "b86bf8836a5e925e61c7",
+    "url": "/projects/react/calculator/build/static/css/2.69afc720.chunk.css"
   },
   {
-    "revision": "6a722b06eec70566d13a",
+    "revision": "badaccd193b89c1e4c5a",
     "url": "/projects/react/calculator/build/static/css/main.fadc4f37.chunk.css"
   },
   {
-    "revision": "68482e04427b26734179",
-    "url": "/projects/react/calculator/build/static/js/2.b6626c19.chunk.js"
+    "revision": "b86bf8836a5e925e61c7",
+    "url": "/projects/react/calculator/build/static/js/2.3155d220.chunk.js"
   },
   {
-    "revision": "cf0e8ab85134e2d0f167",
-    "url": "/projects/react/calculator/build/static/js/3.4dd0c70b.chunk.js"
+    "revision": "4303770517e8f906ad0a",
+    "url": "/projects/react/calculator/build/static/js/3.65f17535.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/projects/react/calculator/build/static/js/3.4dd0c70b.chunk.js.LICENSE.txt"
+    "url": "/projects/react/calculator/build/static/js/3.65f17535.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8d50679da4c01e20a0eb",
-    "url": "/projects/react/calculator/build/static/js/4.f8287400.chunk.js"
+    "revision": "72da0673dd62c01cc7b4",
+    "url": "/projects/react/calculator/build/static/js/4.fb416636.chunk.js"
   },
   {
     "revision": "3ffff7e14083e5642d93fab6fbcb8084",
-    "url": "/projects/react/calculator/build/static/js/4.f8287400.chunk.js.LICENSE.txt"
+    "url": "/projects/react/calculator/build/static/js/4.fb416636.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a722b06eec70566d13a",
-    "url": "/projects/react/calculator/build/static/js/main.c45c3b73.chunk.js"
+    "revision": "badaccd193b89c1e4c5a",
+    "url": "/projects/react/calculator/build/static/js/main.b78eda01.chunk.js"
   },
   {
-    "revision": "a3bfc175194804772211",
-    "url": "/projects/react/calculator/build/static/js/runtime-main.1dd8ea54.js"
+    "revision": "edbbadd0a4e70b7b6c38",
+    "url": "/projects/react/calculator/build/static/js/runtime-main.927160d4.js"
   },
   {
     "revision": "dc9b3ef998729dfdbcfa69049b8fb102",

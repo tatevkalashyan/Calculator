@@ -24,3 +24,29 @@ export const postCalc = (url, info) => {
             })
     }
 }
+
+export const getVideos = url => {
+    return dispatch => {
+        dispatch({
+            type: 'FETCH_VIDEOS'
+        });
+        return fetch(url, {
+            method: 'GET',
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(response => response.json())
+            .then(getVideo => {
+                dispatch({
+                    type: 'GET_VIDEO',
+                    getVideo: getVideo
+                })
+            })
+            .catch(error => {
+                dispatch({
+                    type: 'ERROR_GET',
+                    data: error
+                })
+            })
+    }
+}

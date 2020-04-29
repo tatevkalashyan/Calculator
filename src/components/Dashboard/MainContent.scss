@@ -26,8 +26,14 @@ $textColor: #292929;
     margin: 0 16px;
     .main-col--header {
       padding: 36px 72px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
       background-image: url("../../images/col-header-bg.png");
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       h2 {
         text-align: left;
         font: Bold 36px/48px Roboto;

@@ -11,7 +11,7 @@ const Form = props => {
     const [balloon, setBalloon] = useState('')
     const [perYear, setPerYear] = useState('')
     const [regPayments, setRegPayments] = useState('')
-    const [perYear1, setPerYear1] = useState('')
+    const [paymentsAmount, setPaymentsAmount] = useState('')
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -21,8 +21,8 @@ const Form = props => {
             annaul_interest_rate: rate,
             balloon_payment: balloon,
             number_of_regular_payments: regPayments,
-            payment_amount: perYear,
-            payments_per_year: perYear1
+            payment_amount: paymentsAmount,
+            payments_per_year: perYear
         }
 
         props.postCalc('https://amorth-calc.herokuapp.com/', sendObj)
@@ -75,12 +75,12 @@ const Form = props => {
                         onChange={e => setRegPayments(e.target.value)}
                         required={true} />
                     <FormGroup
-                        label='Payments per Year'
+                        label='Payments Amount'
                         type='number'
                         placeholder='00.00'
                         id='year-pay'
-                        value={perYear1}
-                        onChange={e => setPerYear1(e.target.value)}
+                        value={paymentsAmount}
+                        onChange={e => setPaymentsAmount(e.target.value)}
                         required={true} />
                 </div>
             </div>

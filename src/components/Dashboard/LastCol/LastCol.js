@@ -20,7 +20,7 @@ const LastCol = props => {
             <div className='LastCol-Cont'>
                 {url !== '' ?
                     // width="320" height="240"
-                    <video controls>
+                    <video width="320" height="240">
                         <source onEnded={() => setUrl(props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)])} src={url} type="video/mp4" />
                     </video> :
                     <>

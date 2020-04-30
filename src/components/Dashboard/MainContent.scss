@@ -78,11 +78,46 @@ $textColor: #292929;
         font: 400 14px/19px Roboto;
         color: $textColor;
 
-        >img {
+        > img {
           margin-left: 8px;
           margin-top: 2px;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .MainContent-Cont {
+    display: flex;
+    flex-direction: column;
+
+    .FirstCol {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &-Cont {
+        width: 500px;
+      }
+    }
+    .LastCol {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &-Cont {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form {
+    > div {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

@@ -24,16 +24,18 @@ const Main = props => {
 
     return (
         <div className="Main flex-1 main-col">
-            <div className="main-col--header">
+            <div className="Main-Title main-col--header">
                 <h2>Amortization Calculator</h2>
                 <p>Almost any data field on this form may be calculated. Enter the appropriate numbers in each slot,
                     leaving blank (or zero) the value that you wish to determine, and then click "Calculate" to update the page.</p>
-                <p className="d-flex align-items-center">This page can be forwarded or printed.<img src={PdfLogo} alt="pdfLogo" /></p>
+                <div>
+                    <p className="d-flex align-items-center">This page can be forwarded or printed.</p><img src={PdfLogo} alt="pdfLogo" />
+                </div>
             </div>
             <Form setIsClicked={setIsClicked} />
             <div className="info-share">
                 <p>This loan calculator is written and maintained by Nathan S. Williams.</p>
-                <p>Share this page.<img onMouseOver={() => setIsOver(true)} src={Share} alt="share" /></p>
+                <p>Share this page.<img onMouseLeave={() => setIsOver(false)} onMouseOver={() => setIsOver(true)} src={Share} alt="share" /></p>
             </div>
             {isHover &&
                 <div className='Main-Icons'>
@@ -56,7 +58,7 @@ const Main = props => {
                 </button>
             </div>
             {isOpen && <Table />}
-            
+
         </div>
     );
 }

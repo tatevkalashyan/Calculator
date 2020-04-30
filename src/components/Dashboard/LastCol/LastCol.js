@@ -11,6 +11,7 @@ import './LastCol.scss'
 const LastCol = props => {
     const [url, setUrl] = useState(false)
     const [video, setVideo] = useState(null)
+    const [int, setInt] = useState(null)
 
     const ended = () => {
         setVideo(null)
@@ -34,6 +35,14 @@ const LastCol = props => {
                 <video onEnded={ended} autoPlay muted>
                     <source src={props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)]} type="video/mp4" />
                 </video>)
+            setInt(setInterval(() => {
+                setVideo(
+                    <video onEnded={ended} autoPlay muted>
+                        <source src={props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)]} type="video/mp4" />
+                    </video>)
+            }, 30000))
+        } else {
+            setVideo(null)
         }
     }, [props.videoUrl])
 

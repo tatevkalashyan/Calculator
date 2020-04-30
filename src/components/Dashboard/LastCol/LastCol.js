@@ -29,6 +29,10 @@ const LastCol = props => {
     }, [url])
 
     useEffect(() => {
+        return () => clearInterval(int)
+    })
+
+    useEffect(() => {
         if (props.videoUrl.length !== 0) {
             setUrl(true)
             setVideo(
@@ -45,7 +49,6 @@ const LastCol = props => {
             setVideo(null)
         }
     }, [props.videoUrl])
-
 
     return (
         <div className="LastCol">

@@ -1,16 +1,15 @@
 .Main {
     flex: 3;
-    position: relative;
     padding-bottom: 36px;
 
     &-Title {
-        >div {
+        > div {
             width: 100%;
             height: auto;
             display: flex;
             align-items: flex-end;
 
-            >img {
+            > img {
                 margin-left: 8px;
             }
         }
@@ -96,8 +95,9 @@
         border-radius: 5px;
         opacity: 1;
         width: 224px;
-        bottom: -45px;
-        left: 310px;
+        bottom: -62px;
+        z-index: 1;
+        left: 221px;
         display: flex;
         flex-direction: column;
         padding: 11px 25px;

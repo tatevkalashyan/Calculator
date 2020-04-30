@@ -16,9 +16,10 @@ import './Main.scss'
 const Main = props => {
     const [isOpen, setIsOpen] = useState(false)
     const [isClicked, setIsClicked] = useState(false)
+    const [isHover, setIsOver] = useState(false)
 
     if (isClicked && props.isFetching) {
-        return (<div>Loading...</div>)
+        return (<div className='Main flex-1 main-col'>Loading...</div>)
     }
 
     return (
@@ -32,19 +33,9 @@ const Main = props => {
             <Form setIsClicked={setIsClicked} />
             <div className="info-share">
                 <p>This loan calculator is written and maintained by Nathan S. Williams.</p>
-                <p>Share this page.<img src={Share} alt="share" /></p>
+                <p>Share this page.<img onMouseOver={() => setIsOver(true)} src={Share} alt="share" /></p>
             </div>
-            {isClicked && <Summary />}
-            <p className='info-share'>*These results are estimates which do not
-            account for accumulated error of payments being
-                 rounded to the nearest cent.</p>
-            <div className='Main-ShowBtn info-share'>
-                <button onClick={() => setIsOpen(!isOpen)}>
-                    <img src={buttonIcon} alt='' /> Show Amortization Schedule
-                </button>
-            </div>
-            {isOpen && <Table />}
-            {!isClicked &&
+            {isHover &&
                 <div className='Main-Icons'>
                     <p>Share this</p>
                     <div>
@@ -55,6 +46,17 @@ const Main = props => {
                         <img src={copy} alt='' />
                     </div>
                 </div>}
+            {isClicked && <Summary />}
+            <p className='info-share'>*These results are estimates which do not
+            account for accumulated error of payments being
+                 rounded to the nearest cent.</p>
+            <div className='Main-ShowBtn info-share'>
+                <button onClick={() => setIsOpen(!isOpen)}>
+                    <img src={buttonIcon} alt='' /> Show Amortization Schedule
+                </button>
+            </div>
+            {isOpen && <Table />}
+            
         </div>
     );
 }

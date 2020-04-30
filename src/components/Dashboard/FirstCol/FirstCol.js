@@ -9,22 +9,39 @@ import './FirstCol.scss'
 
 const FirstCol = props => {
 
-    const [url, setUrl] = useState('')
+    const [url, setUrl] = useState(false)
+    const [video, setVideo] = useState(null)
+
+    const ended = () => {
+        setVideo(null)
+        setUrl(false)
+    }
+
+    useEffect(() => {
+        if (!url && props.videoUrl.length !== 0) {
+            setVideo(
+                <video onEnded={ended} autoPlay muted>
+                    <source src={props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)]} type="video/mp4" />
+                </video>)
+            setUrl(true)
+        }
+    }, [url])
 
     useEffect(() => {
         if (props.videoUrl.length !== 0) {
-            setUrl(props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)])
+            setUrl(true)
+            setVideo(
+                <video onEnded={ended} autoPlay muted>
+                    <source src={props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)]} type="video/mp4" />
+                </video>)
         }
     }, [props.videoUrl])
 
     return (
         <div className="FirstCol">
             <div className="FirstCol-Cont">
-                {url !== '' ?
-                    // width="320" height="240"
-                    <video width="320" height="240">
-                        <source onEnded={() => setUrl(props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)])} src={url} type="video/mp4" />
-                    </video> :
+                {url ?
+                    video :
                     <>
                         <img src={Stream} alt="stream" />
                         <img src={StreamDown} alt="StreamDown" />

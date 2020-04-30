@@ -1,6 +1,7 @@
 import React, {
     useState,
-    useEffect
+    useEffect,
+    useRef
 } from 'react';
 import Selling from "../../../images/salling.png"
 import Selling1 from "../../../images/salling1.png"
@@ -8,21 +9,40 @@ import { connect } from 'react-redux'
 import './LastCol.scss'
 
 const LastCol = props => {
-    const [url, setUrl] = useState('')
+    const [url, setUrl] = useState(false)
+    const [video, setVideo] = useState(null)
+
+    const ended = () => {
+        setVideo(null)
+        setUrl(false)
+    }
+
+    useEffect(() => {
+        if (!url && props.videoUrl.length !== 0) {
+            setVideo(
+                <video onEnded={ended} autoPlay muted>
+                    <source src={props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)]} type="video/mp4" />
+                </video>)
+            setUrl(true)
+        }
+    }, [url])
 
     useEffect(() => {
         if (props.videoUrl.length !== 0) {
-            setUrl(props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)])
+            setUrl(true)
+            setVideo(
+                <video onEnded={ended} autoPlay muted>
+                    <source src={props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)]} type="video/mp4" />
+                </video>)
         }
     }, [props.videoUrl])
+
+
     return (
         <div className="LastCol">
             <div className='LastCol-Cont'>
-                {url !== '' ?
-                    // width="320" height="240"
-                    <video width="320" height="240">
-                        <source onEnded={() => setUrl(props.videoUrl[Math.floor(Math.random() * props.videoUrl.length)])} src={url} type="video/mp4" />
-                    </video> :
+                {url ?
+                    video :
                     <>
                         <img src={Selling1} alt="salling" />
                         <img src={Selling} alt="salling" />

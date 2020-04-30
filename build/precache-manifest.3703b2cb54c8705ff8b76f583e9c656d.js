@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95df0d3ba7184232d162f964bdd83932",
+    "revision": "55bb6efb7b2ee15c32b47f72081798fe",
     "url": "/projects/react/calculator/build/index.html"
   },
   {
-    "revision": "e5f61f7b343083efe444",
-    "url": "/projects/react/calculator/build/static/css/2.9a77c776.chunk.css"
+    "revision": "84bbfd1faf85ee0ee29c",
+    "url": "/projects/react/calculator/build/static/css/2.936852a9.chunk.css"
   },
   {
     "revision": "badaccd193b89c1e4c5a",
     "url": "/projects/react/calculator/build/static/css/main.fadc4f37.chunk.css"
   },
   {
-    "revision": "e5f61f7b343083efe444",
-    "url": "/projects/react/calculator/build/static/js/2.1e6a427a.chunk.js"
+    "revision": "84bbfd1faf85ee0ee29c",
+    "url": "/projects/react/calculator/build/static/js/2.b290dfeb.chunk.js"
   },
   {
     "revision": "4303770517e8f906ad0a",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/react/calculator/build/static/js/main.b78eda01.chunk.js"
   },
   {
-    "revision": "4a520d035e8200affd53",
-    "url": "/projects/react/calculator/build/static/js/runtime-main.2010d455.js"
+    "revision": "3026ca8a9fc262452580",
+    "url": "/projects/react/calculator/build/static/js/runtime-main.8ae2ef6c.js"
   },
   {
     "revision": "dc9b3ef998729dfdbcfa69049b8fb102",
